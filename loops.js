@@ -11,7 +11,7 @@ if(i===0){
   arr.push("I am "+i+"/'s strange loop.");
   return arr;
 }
-    
+
   }
 }
 var count=25;
