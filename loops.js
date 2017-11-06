@@ -15,6 +15,14 @@ function whileLoop(count){
   }else{
     count--;
     return count;
-    
+
   }
 }
+function doWhileLoop(arr){
+
+  do{
+    arr.pop();
+    return arr;
+  }while (arr.length<0); 
+    
+  
