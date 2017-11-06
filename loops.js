@@ -8,7 +8,7 @@ if(i===0){
   arr.push("I am 1 strange loop.");
   return arr;
 }else{
-  arr.push("I am "+i+"/'s strange loop.");
+  arr.push("I am "+i+"s strange loop.");
   return arr;
 }
 
