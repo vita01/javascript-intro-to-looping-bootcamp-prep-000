@@ -1,9 +1,17 @@
 function forLoop(arr){
 
   for(i=0;i<25;i++){
-
-     arr.push("I am "+i+" strange loop.");
-     return arr;
+if(i===0){
+  arr.push("I am strange loop.");
+  return arr;
+}else if(i==1){
+  arr.push("I am 1 strange loop.");
+  return arr;
+}else{
+  arr.push("I am "+i+"/'s strange loop.");
+  return arr;
+}
+    
   }
 }
 var count=25;
