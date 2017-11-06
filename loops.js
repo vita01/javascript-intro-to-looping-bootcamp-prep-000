@@ -1,36 +1,30 @@
-var arr=[];
-function forLoop(arr){
-
-  for(var i=0;i<25;i++){
-if(i===0){
-  arr.push("I am strange loop.");
-  return arr;
-}else if(i==1){
-  arr.push("I am 1 strange loop.");
-  return arr;
-}else{
-  arr.push("I am "+i+"s strange loop.");
-  return arr;
-}
-
+function forLoop(array) {
+   for ( let i = 0; i < 25; i++) {
+     if (i === 1) {
+       array.push(`I am 1 strange loop.`)
+     } else {
+       array.push(`I am ${i} strange loops.`)
+     }
   }
+  return array;
 }
-var count=25;
-function whileLoop(count){
 
-  while(count>=0){
+function whileLoop(n) {
+  let countdown = n;
 
-    if(count===0)
-    return 'done'
-  }else{
-    count--;
-    return count;
-
+    while (countdown > 0) {
+      console.log(--countdown)
+    }
+    return "done";
   }
-}
-function doWhileLoop(arr){
 
-  do{
-    arr.pop();
-    return arr;
-  }while (arr.length<0);
+function doWhileLoop(array) {
+  function maybeTrue() {
+    return Math.random() >= 0.5
+  }
+
+  do {
+    array.pop();
+  } while (array.length > -1 && maybeTrue());
+    return array;
+}
