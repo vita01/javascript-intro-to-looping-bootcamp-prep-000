@@ -2,7 +2,7 @@ function forLoop(arr){
 
   for(i=0;i<25;i++){
 
-    return "I am "+i+" strange loop."
+    return arr.push("I am "+i+" strange loop.");
   }
 }
 var count=25;
