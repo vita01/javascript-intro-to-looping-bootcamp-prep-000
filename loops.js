@@ -1,7 +1,7 @@
 var arr=[];
 function forLoop(arr){
 
-  for(i=0;i<25;i++){
+  for(var i=0;i<25;i++){
 if(i===0){
   arr.push("I am strange loop.");
   return arr;
